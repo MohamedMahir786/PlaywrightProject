@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-25T15:49:46 IST" name="Default suite" finished-at="2024-01-25T15:50:09 IST" duration-ms="22661">
+    <groups>
+    </groups>
+    <test started-at="2024-01-25T15:49:46 IST" name="Default test" finished-at="2024-01-25T15:50:09 IST" duration-ms="22661">
+      <class name="org.collegesuggestproject.HeaderSection">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.collegesuggestproject.HeaderSection@25084a1e]" started-at="2024-01-25T15:49:46 IST" name="setup" finished-at="2024-01-25T15:49:54 IST" duration-ms="8279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="navigateToGftiCollegeOfEngineering()[pri:1, instance:org.collegesuggestproject.HeaderSection@25084a1e]" started-at="2024-01-25T15:49:54 IST" name="navigateToGftiCollegeOfEngineering" finished-at="2024-01-25T15:49:59 IST" duration-ms="4659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToGftiCollegeOfEngineering -->
+        <test-method signature="navigateToPrivateCollegeOfMedical()[pri:2, instance:org.collegesuggestproject.HeaderSection@25084a1e]" started-at="2024-01-25T15:49:59 IST" name="navigateToPrivateCollegeOfMedical" finished-at="2024-01-25T15:50:02 IST" duration-ms="3113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToPrivateCollegeOfMedical -->
+        <test-method signature="navigateToPrivateCollegeOfDental()[pri:3, instance:org.collegesuggestproject.HeaderSection@25084a1e]" started-at="2024-01-25T15:50:02 IST" name="navigateToPrivateCollegeOfDental" finished-at="2024-01-25T15:50:04 IST" duration-ms="2136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToPrivateCollegeOfDental -->
+        <test-method signature="navigateToNitCollegeOfArchitecture()[pri:4, instance:org.collegesuggestproject.HeaderSection@25084a1e]" started-at="2024-01-25T15:50:04 IST" name="navigateToNitCollegeOfArchitecture" finished-at="2024-01-25T15:50:06 IST" duration-ms="1957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToNitCollegeOfArchitecture -->
+        <test-method signature="navigateToNitCollegeOfPharmacy()[pri:5, instance:org.collegesuggestproject.HeaderSection@25084a1e]" started-at="2024-01-25T15:50:06 IST" name="navigateToNitCollegeOfPharmacy" finished-at="2024-01-25T15:50:08 IST" duration-ms="1984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToNitCollegeOfPharmacy -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:org.collegesuggestproject.HeaderSection@25084a1e]" started-at="2024-01-25T15:50:08 IST" name="teardown" finished-at="2024-01-25T15:50:09 IST" duration-ms="428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- org.collegesuggestproject.HeaderSection -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
