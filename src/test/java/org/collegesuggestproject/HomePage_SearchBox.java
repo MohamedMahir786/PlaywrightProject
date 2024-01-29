@@ -10,24 +10,20 @@ import org.testng.annotations.Test;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page.ScreenshotOptions;
 
-public class SearchBox  extends BaseClass {
+public class HomePage_SearchBox extends BaseClass {
 
-	
-	
 	@Test(priority = 1)
-	
+
 	public void typeOnSearchBox() {
-		
+
 		ScreenshotOptions screenshotOptions = new ScreenshotOptions();
-    	Locator input = page.locator("(//input[@id=':r0:'])[1]");
-    	input.type("Mahi");
-    	page.screenshot(new ScreenshotOptions().setPath(Paths.get("./snaps/full_page.png")));
-		
-	
+		Locator input = page.locator("(//input[@id=':r0:'])[1]");
+		input.fill("Mahi");
+		page.screenshot(new ScreenshotOptions().setPath(Paths.get("./snaps/full_page.png")));
+
 		page.click("//a[normalize-space()='Mahindra University']");
-		assertThat(page).hasTitle("MU Hyderabad 2022 B.Tech Overview For Courses, Placements & More | College Suggest | College Suggest");
+		assertThat(page).hasTitle(
+				"MU Hyderabad 2022 B.Tech Overview For Courses, Placements & More | College Suggest | College Suggest");
 	}
 
-	
-	
 }

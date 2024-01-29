@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import com.microsoft.playwright.Locator;
 
-public class HeaderSection extends BaseClass {           
+public class HomePage_HeaderSection extends BaseClass {           
 	
 	@Test(priority = 1)
 

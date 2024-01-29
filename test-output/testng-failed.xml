@@ -3,17 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.collegesuggestproject.HeaderSection">
+      <class name="org.collegesuggestproject.Footer">
         <methods>
+          <include name="cs_Verify_FollowUsSection_In_Footer_Is_Present_0008"/>
+          <include name="cs_Verify_EngineeringSection_In_Footer_Is_Present_0001"/>
           <include name="teardown"/>
-          <include name="navigateToPrivateCollegeOfDental"/>
-          <include name="navigateToPrivateCollegeOfMedical"/>
-          <include name="navigateToNitCollegeOfPharmacy"/>
+          <include name="cs_Verify_ArchitectureSection_In_Footer_Is_Present_0002"/>
           <include name="setup"/>
-          <include name="navigateToNitCollegeOfArchitecture"/>
-          <include name="navigateToGftiCollegeOfEngineering"/>
+          <include name="cs_Verify_MedicalSection_In_Footer_Is_Present_0003"/>
+          <include name="cs_Verify_PharmacySection_In_Footer_Is_Present_0005"/>
+          <include name="cs_Verify_OtherLinksSection_In_Footer_Is_Present_0007"/>
+          <include name="cs_Verify_DentalSection_In_Footer_Is_Present_0004"/>
         </methods>
-      </class> <!-- org.collegesuggestproject.HeaderSection -->
+      </class> <!-- org.collegesuggestproject.Footer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

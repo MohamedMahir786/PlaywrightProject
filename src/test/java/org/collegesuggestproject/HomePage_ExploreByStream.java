@@ -5,7 +5,7 @@ import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertTha
 import org.pageobjectmodel.BaseClass;
 import org.testng.annotations.Test;
 
-public class ExploreByStream extends BaseClass {
+public  class HomePage_ExploreByStream extends BaseClass {
 
 	@Test(priority = 1)
 
