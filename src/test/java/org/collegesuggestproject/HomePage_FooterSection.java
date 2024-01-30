@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import com.microsoft.playwright.Locator;
 
-public class HomePage_Footer extends BaseClass {
+public class HomePage_FooterSection extends BaseClass {
 
 	@Test(priority = 1)
 	public void cs_Verify_EngineeringSection_In_Footer_Is_Present_0001() throws InterruptedException {

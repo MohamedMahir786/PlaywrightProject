@@ -5,12 +5,30 @@ import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertTha
 import java.nio.file.Paths;
 
 import org.pageobjectmodel.BaseClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.Locator;
+import com.microsoft.playwright.Playwright;
+import com.microsoft.playwright.BrowserType.LaunchOptions;
 
-public class HomePage_HeaderSection extends BaseClass {           
+public class HomePage_HeaderSection extends BaseClass {
 	
+	
+	@BeforeClass
+	public void setup() {
+		playwright = Playwright.create();
+		browser = playwright.chromium().launch(new LaunchOptions().setHeadless(false));
+		BrowserContext context = browser.newContext(new Browser.NewContextOptions().setViewportSize(1920, 1080).setRecordVideoDir(Paths.get("vedios/")).setRecordVideoSize(1280,720));
+		page = context.newPage();
+		page.navigate("https://staging.collegesuggest.com/");
+
+	}
+
+	
+
 	@Test(priority = 1)
 
 	public void navigateToGftiCollegeOfEngineering() {
@@ -48,7 +66,7 @@ public class HomePage_HeaderSection extends BaseClass {
 		page.locator("//*[@id='architecture-colleges-menu-button']").hover();
 		page.click("//li[@role='menuitem']//a[contains(text(),'Top 10 NIT Colleges in india')]");
 		assertThat(page).hasTitle("Top 10 NIT Architecture Colleges in India | College Suggest");
-		page.goBack(); 
+		page.goBack();
 	}
 
 	@Test(priority = 5)

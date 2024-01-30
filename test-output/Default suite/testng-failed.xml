@@ -3,19 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.collegesuggestproject.Footer">
+      <class name="org.collegesuggestproject.HomePage_ExploreCareers">
         <methods>
-          <include name="cs_Verify_FollowUsSection_In_Footer_Is_Present_0008"/>
-          <include name="cs_Verify_EngineeringSection_In_Footer_Is_Present_0001"/>
           <include name="teardown"/>
-          <include name="cs_Verify_ArchitectureSection_In_Footer_Is_Present_0002"/>
           <include name="setup"/>
-          <include name="cs_Verify_MedicalSection_In_Footer_Is_Present_0003"/>
-          <include name="cs_Verify_PharmacySection_In_Footer_Is_Present_0005"/>
-          <include name="cs_Verify_OtherLinksSection_In_Footer_Is_Present_0007"/>
-          <include name="cs_Verify_DentalSection_In_Footer_Is_Present_0004"/>
+          <include name="click_On_TopCoursestostudy_0007"/>
         </methods>
-      </class> <!-- org.collegesuggestproject.Footer -->
+      </class> <!-- org.collegesuggestproject.HomePage_ExploreCareers -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

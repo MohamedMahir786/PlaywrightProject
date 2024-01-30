@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-29T17:48:27 IST" name="Default suite" finished-at="2024-01-29T17:48:56 IST" duration-ms="29088">
+  <suite started-at="2024-01-30T11:40:22 IST" name="Default suite" finished-at="2024-01-30T11:40:49 IST" duration-ms="27568">
     <groups>
     </groups>
-    <test started-at="2024-01-29T17:48:27 IST" name="Default test" finished-at="2024-01-29T17:48:56 IST" duration-ms="29088">
-      <class name="org.collegesuggestproject.ExploreByStream">
-        <test-method is-config="true" signature="setup()[pri:0, instance:org.collegesuggestproject.ExploreByStream@25084a1e]" started-at="2024-01-29T17:48:27 IST" name="setup" finished-at="2024-01-29T17:48:34 IST" duration-ms="7130" status="PASS">
+    <test started-at="2024-01-30T11:40:22 IST" name="Default test" finished-at="2024-01-30T11:40:49 IST" duration-ms="27568">
+      <class name="org.collegesuggestproject.HomePage_HeaderSection">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.collegesuggestproject.HomePage_HeaderSection@25084a1e]" started-at="2024-01-30T11:40:22 IST" name="setup" finished-at="2024-01-30T11:40:31 IST" duration-ms="9349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Verify_ExploreByStream_Engineering_Is_Clickable()[pri:1, instance:org.collegesuggestproject.ExploreByStream@25084a1e]" started-at="2024-01-29T17:48:34 IST" name="Verify_ExploreByStream_Engineering_Is_Clickable" finished-at="2024-01-29T17:48:43 IST" duration-ms="8823" status="PASS">
+        <test-method signature="navigateToGftiCollegeOfEngineering()[pri:1, instance:org.collegesuggestproject.HomePage_HeaderSection@25084a1e]" started-at="2024-01-30T11:40:31 IST" name="navigateToGftiCollegeOfEngineering" finished-at="2024-01-30T11:40:36 IST" duration-ms="5182" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_ExploreByStream_Engineering_Is_Clickable -->
-        <test-method signature="Verify_ExploreByStream_Medical_Is_Clickable()[pri:2, instance:org.collegesuggestproject.ExploreByStream@25084a1e]" started-at="2024-01-29T17:48:43 IST" name="Verify_ExploreByStream_Medical_Is_Clickable" finished-at="2024-01-29T17:48:47 IST" duration-ms="4085" status="PASS">
+        </test-method> <!-- navigateToGftiCollegeOfEngineering -->
+        <test-method signature="navigateToPrivateCollegeOfMedical()[pri:2, instance:org.collegesuggestproject.HomePage_HeaderSection@25084a1e]" started-at="2024-01-30T11:40:36 IST" name="navigateToPrivateCollegeOfMedical" finished-at="2024-01-30T11:40:40 IST" duration-ms="4050" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_ExploreByStream_Medical_Is_Clickable -->
-        <test-method signature="Verify_ExploreByStream_Dental_Is_Clickable()[pri:3, instance:org.collegesuggestproject.ExploreByStream@25084a1e]" started-at="2024-01-29T17:48:47 IST" name="Verify_ExploreByStream_Dental_Is_Clickable" finished-at="2024-01-29T17:48:50 IST" duration-ms="2474" status="PASS">
+        </test-method> <!-- navigateToPrivateCollegeOfMedical -->
+        <test-method signature="navigateToPrivateCollegeOfDental()[pri:3, instance:org.collegesuggestproject.HomePage_HeaderSection@25084a1e]" started-at="2024-01-30T11:40:40 IST" name="navigateToPrivateCollegeOfDental" finished-at="2024-01-30T11:40:43 IST" duration-ms="2593" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_ExploreByStream_Dental_Is_Clickable -->
-        <test-method signature="Verify_ExploreByStream_Architecture_Is_Clickable()[pri:4, instance:org.collegesuggestproject.ExploreByStream@25084a1e]" started-at="2024-01-29T17:48:50 IST" name="Verify_ExploreByStream_Architecture_Is_Clickable" finished-at="2024-01-29T17:48:52 IST" duration-ms="2569" status="PASS">
+        </test-method> <!-- navigateToPrivateCollegeOfDental -->
+        <test-method signature="navigateToNitCollegeOfArchitecture()[pri:4, instance:org.collegesuggestproject.HomePage_HeaderSection@25084a1e]" started-at="2024-01-30T11:40:43 IST" name="navigateToNitCollegeOfArchitecture" finished-at="2024-01-30T11:40:46 IST" duration-ms="2938" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_ExploreByStream_Architecture_Is_Clickable -->
-        <test-method signature="Verify_ExploreByStream_Pharmacy_Is_Clickable()[pri:5, instance:org.collegesuggestproject.ExploreByStream@25084a1e]" started-at="2024-01-29T17:48:52 IST" name="Verify_ExploreByStream_Pharmacy_Is_Clickable" finished-at="2024-01-29T17:48:56 IST" duration-ms="3375" status="PASS">
+        </test-method> <!-- navigateToNitCollegeOfArchitecture -->
+        <test-method signature="navigateToNitCollegeOfPharmacy()[pri:5, instance:org.collegesuggestproject.HomePage_HeaderSection@25084a1e]" started-at="2024-01-30T11:40:46 IST" name="navigateToNitCollegeOfPharmacy" finished-at="2024-01-30T11:40:49 IST" duration-ms="2860" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_ExploreByStream_Pharmacy_Is_Clickable -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:org.collegesuggestproject.ExploreByStream@25084a1e]" started-at="2024-01-29T17:48:56 IST" name="teardown" finished-at="2024-01-29T17:48:56 IST" duration-ms="531" status="PASS">
+        </test-method> <!-- navigateToNitCollegeOfPharmacy -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:org.collegesuggestproject.HomePage_HeaderSection@25084a1e]" started-at="2024-01-30T11:40:49 IST" name="teardown" finished-at="2024-01-30T11:40:49 IST" duration-ms="514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- org.collegesuggestproject.ExploreByStream -->
+      </class> <!-- org.collegesuggestproject.HomePage_HeaderSection -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
