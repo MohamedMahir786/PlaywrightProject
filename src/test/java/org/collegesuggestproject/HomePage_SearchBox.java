@@ -17,11 +17,11 @@ public class HomePage_SearchBox extends BaseClass {
 	public void typeOnSearchBox() {
 
 		ScreenshotOptions screenshotOptions = new ScreenshotOptions();
-		Locator input = page.locator("(//input[@id=':r0:'])[1]");
+		Locator input = page.locator("[placeholder='Search']");
 		input.fill("Mahi");
 		page.screenshot(new ScreenshotOptions().setPath(Paths.get("./snaps/full_page.png")));
 
-		page.click("//a[normalize-space()='Mahindra University']");
+		page.click("//a[text()='Mahindra University']");
 		assertThat(page).hasTitle(
 				"MU Hyderabad 2022 B.Tech Overview For Courses, Placements & More | College Suggest | College Suggest");
 	}

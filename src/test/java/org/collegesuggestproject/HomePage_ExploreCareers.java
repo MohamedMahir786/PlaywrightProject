@@ -14,7 +14,7 @@ public class HomePage_ExploreCareers extends BaseClass {
 
 	public void cs_Verify_ExploreCareersSection_Heading_Is_Present_0001() {
 
-		Locator ExploreCareersSectionheader = page.locator("//h2[normalize-space()='Explore Careers']");
+		Locator ExploreCareersSectionheader = page.locator("//h2[text()='Explore Careers']");
 		assertThat(ExploreCareersSectionheader).hasText("Explore Careers");
 
 	}
@@ -25,7 +25,7 @@ public class HomePage_ExploreCareers extends BaseClass {
 
 	public void cs_Verify_TopCollegeInIndia_Heading_Is_Present_0002() {
 
-		Locator TopCollegeInIndiaheader = page.locator("//p[normalize-space()='Top Colleges in India']");
+		Locator TopCollegeInIndiaheader = page.locator("//p[text()='Top Colleges in India']");
 		assertThat(TopCollegeInIndiaheader).hasText("Top Colleges in India");
 
 	}
@@ -35,7 +35,7 @@ public class HomePage_ExploreCareers extends BaseClass {
 	@Test(priority = 3)
 
 	public void cs_Verify_TopPlacesInIndiaToStudy_Heading_Is_Present_0003() throws InterruptedException {
-		Locator TopPlacesInIndiaToStudyheader = page.locator("//p[normalize-space()='Top Places In India to study']");
+		Locator TopPlacesInIndiaToStudyheader = page.locator("//p[text()='Top Places In India to study']");
 		assertThat(TopPlacesInIndiaToStudyheader).hasText("Top Places In India to study");
 
 	}
@@ -46,7 +46,7 @@ public class HomePage_ExploreCareers extends BaseClass {
 
 	public void cs_Verify_TopCoursesToStudy_Heading_Is_Present_0004() throws InterruptedException {
 
-		Locator TopCoursesToStudyheader = page.locator("//p[normalize-space()='Top Courses to study']");
+		Locator TopCoursesToStudyheader = page.locator("//p[text()='Top Courses to study']");
 		assertThat(TopCoursesToStudyheader).hasText("Top Courses to study");
 
 	}
@@ -54,10 +54,10 @@ public class HomePage_ExploreCareers extends BaseClass {
 	@Test(priority = 5)
 
 	public void click_On_TopCollegesinIndia_0005() {
-		page.click("//a[normalize-space()='Top Engineering colleges']");
+		page.click("//a[text()='Top Engineering colleges']");
 
 		Locator TopEngineeringCollegesinIndiaheader = page
-				.locator("//*[@id=\"__next\"]/div/main/div/div/div/div/div[1]/div/div[1]/div/div[1]/div/p");
+				.locator("//p[text()='Top Engineering Colleges in India']");
 		assertThat(TopEngineeringCollegesinIndiaheader).hasText("Top Engineering Colleges in India");
 
 		page.goBack();
@@ -66,10 +66,10 @@ public class HomePage_ExploreCareers extends BaseClass {
 	@Test(priority = 6)
 
 	public void click_On_TopPlacesInIndiatostudy_0006() {
-		page.click("//a[normalize-space()='Coimbatore']");
+		page.click("//a[text()='Coimbatore']");
 
 		Locator TopEngineeringCollegesinCoimbatoreheader = page
-				.locator("//*[@id=\"__next\"]/div/main/div/div/div/div/div[1]/div/div[1]/div/div[1]/div/p");
+				.locator("//p[text()='Top Engineering Colleges in Coimbatore']");
 		assertThat(TopEngineeringCollegesinCoimbatoreheader).hasText("Top Engineering Colleges in Coimbatore");
 
 		page.goBack();
@@ -78,10 +78,10 @@ public class HomePage_ExploreCareers extends BaseClass {
 	@Test(priority = 7)
 
 	public void click_On_TopCoursestostudy_0007() {
-		page.click("//a[normalize-space()='ECE']");
+		page.click("//a[text()='ECE']");
 
 		Locator TopEngineeringCollegesinECEheader = page
-				.locator("//*[@id=\"__next\"]/div/main/div/div/div/div/div[1]/div/div[1]/div/div[1]/div/p");
+				.locator("//p[text()='Top Engineering Colleges in ECE']");
 		assertThat(TopEngineeringCollegesinECEheader).hasText("Top Engineering Colleges in ECE");
 
 		page.goBack();

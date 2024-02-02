@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jan 30 11:40:22 IST 2024</td>
+<td>Started on:</td><td>Fri Feb 02 17:45:24 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>27 seconds (27568 ms)</td>
+<tr><td>Total time:</td><td>34 seconds (34731 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,38 +67,185 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='org.collegesuggestproject.HomePage_HeaderSection.navigateToPrivateCollegeOfMedical()'><b>navigateToPrivateCollegeOfMedical</b><br>Test class: org.collegesuggestproject.HomePage_HeaderSection</td>
-<td></td>
-<td>4</td>
-<td>org.collegesuggestproject.HomePage_HeaderSection@25084a1e</td></tr>
-<tr>
-<td title='org.collegesuggestproject.HomePage_HeaderSection.navigateToNitCollegeOfArchitecture()'><b>navigateToNitCollegeOfArchitecture</b><br>Test class: org.collegesuggestproject.HomePage_HeaderSection</td>
-<td></td>
-<td>2</td>
-<td>org.collegesuggestproject.HomePage_HeaderSection@25084a1e</td></tr>
-<tr>
-<td title='org.collegesuggestproject.HomePage_HeaderSection.navigateToNitCollegeOfPharmacy()'><b>navigateToNitCollegeOfPharmacy</b><br>Test class: org.collegesuggestproject.HomePage_HeaderSection</td>
-<td></td>
-<td>2</td>
-<td>org.collegesuggestproject.HomePage_HeaderSection@25084a1e</td></tr>
-<tr>
-<td title='org.collegesuggestproject.HomePage_HeaderSection.navigateToGftiCollegeOfEngineering()'><b>navigateToGftiCollegeOfEngineering</b><br>Test class: org.collegesuggestproject.HomePage_HeaderSection</td>
-<td></td>
-<td>5</td>
-<td>org.collegesuggestproject.HomePage_HeaderSection@25084a1e</td></tr>
-<tr>
-<td title='org.collegesuggestproject.HomePage_HeaderSection.navigateToPrivateCollegeOfDental()'><b>navigateToPrivateCollegeOfDental</b><br>Test class: org.collegesuggestproject.HomePage_HeaderSection</td>
-<td></td>
-<td>2</td>
-<td>org.collegesuggestproject.HomePage_HeaderSection@25084a1e</td></tr>
+<td title='org.collegesuggestproject.HomePage_HeaderSection.engineering()'><b>engineering</b><br>Test class: org.collegesuggestproject.HomePage_HeaderSection</td>
+<td><div><pre>com.microsoft.playwright.PlaywrightException: Error {
+  message=&apos;Page closed
+=========================== logs ===========================
+waiting for locator(&quot;xpath=//*[@id=&apos;engineering-colleges-menu&apos;]&quot;)
+============================================================
+  name=&apos;Error
+  stack=&apos;Error: Page closed
+=========================== logs ===========================
+waiting for locator(&quot;xpath=//*[@id=&apos;engineering-colleges-menu&apos;]&quot;)
+============================================================
+    at LongStandingScope._race (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\utils\manualPromise.js:96:51)
+    at LongStandingScope.race (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\utils\manualPromise.js:87:17)
+    at C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\utils\manualPromise.js:84:43
+    at Array.map (&lt;anonymous&gt;)
+    at LongStandingScope.raceMultiple (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\utils\manualPromise.js:84:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\server\frames.js:907:40)
+    at async ProgressController.run (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\server\progress.js:92:22)
+    at async FrameDispatcher.innerText (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\server\dispatchers\frameDispatcher.js:182:14)
+    at async DispatcherConnection.dispatch (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\server\dispatchers\dispatcher.js:313:22)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+	at com.microsoft.playwright.impl.FrameImpl.innerTextImpl(FrameImpl.java:526)
+	at com.microsoft.playwright.impl.PageImpl.lambda$innerText$49(PageImpl.java:849)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+	at com.microsoft.playwright.impl.PageImpl.innerText(PageImpl.java:848)
+	at com.microsoft.playwright.Page.innerText(Page.java:5374)
+	at org.collegesuggestproject.HomePage_HeaderSection.engineering(HomePage_HeaderSection.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message=&apos;Page closed
+=========================== logs ===========================
+waiting for locator(&quot;xpath=//*[@id=&apos;engineering-colleges-menu&apos;]&quot;)
+============================================================
+  name=&apos;Error
+  stack=&apos;Error: Page closed
+=========================== logs ===========================
+waiting for locator(&quot;xpath=//*[@id=&apos;engineering-colleges-menu&apos;]&quot;)
+============================================================
+    at LongStandingScope._race (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\utils\manualPromise.js:96:51)
+    at LongStandingScope.race (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\utils\manualPromise.js:87:17)
+    at C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\utils\manualPromise.js:84:43
+    at Array.map (&lt;anonymous&gt;)
+    at LongStandingScope.raceMultiple (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\utils\manualPromise.js:84:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\server\frames.js:907:40)
+    at async ProgressController.run (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\server\progress.js:92:22)
+    at async FrameDispatcher.innerText (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\server\dispatchers\frameDispatcher.js:182:14)
+    at async DispatcherConnection.dispatch (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\server\dispatchers\dispatcher.js:313:22)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+	... 37 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1406919011", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1406919011'><pre>com.microsoft.playwright.PlaywrightException: Error {
+  message=&apos;Page closed
+=========================== logs ===========================
+waiting for locator(&quot;xpath=//*[@id=&apos;engineering-colleges-menu&apos;]&quot;)
+============================================================
+  name=&apos;Error
+  stack=&apos;Error: Page closed
+=========================== logs ===========================
+waiting for locator(&quot;xpath=//*[@id=&apos;engineering-colleges-menu&apos;]&quot;)
+============================================================
+    at LongStandingScope._race (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\utils\manualPromise.js:96:51)
+    at LongStandingScope.race (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\utils\manualPromise.js:87:17)
+    at C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\utils\manualPromise.js:84:43
+    at Array.map (&lt;anonymous&gt;)
+    at LongStandingScope.raceMultiple (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\utils\manualPromise.js:84:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\server\frames.js:907:40)
+    at async ProgressController.run (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\server\progress.js:92:22)
+    at async FrameDispatcher.innerText (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\server\dispatchers\frameDispatcher.js:182:14)
+    at async DispatcherConnection.dispatch (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\server\dispatchers\dispatcher.js:313:22)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+	at com.microsoft.playwright.impl.FrameImpl.innerTextImpl(FrameImpl.java:526)
+	at com.microsoft.playwright.impl.PageImpl.lambda$innerText$49(PageImpl.java:849)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+	at com.microsoft.playwright.impl.PageImpl.innerText(PageImpl.java:848)
+	at com.microsoft.playwright.Page.innerText(Page.java:5374)
+	at org.collegesuggestproject.HomePage_HeaderSection.engineering(HomePage_HeaderSection.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message=&apos;Page closed
+=========================== logs ===========================
+waiting for locator(&quot;xpath=//*[@id=&apos;engineering-colleges-menu&apos;]&quot;)
+============================================================
+  name=&apos;Error
+  stack=&apos;Error: Page closed
+=========================== logs ===========================
+waiting for locator(&quot;xpath=//*[@id=&apos;engineering-colleges-menu&apos;]&quot;)
+============================================================
+    at LongStandingScope._race (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\utils\manualPromise.js:96:51)
+    at LongStandingScope.race (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\utils\manualPromise.js:87:17)
+    at C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\utils\manualPromise.js:84:43
+    at Array.map (&lt;anonymous&gt;)
+    at LongStandingScope.raceMultiple (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\utils\manualPromise.js:84:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\server\frames.js:907:40)
+    at async ProgressController.run (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\server\progress.js:92:22)
+    at async FrameDispatcher.innerText (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\server\dispatchers\frameDispatcher.js:182:14)
+    at async DispatcherConnection.dispatch (C:\Users\DIGITA~1\AppData\Local\Temp\playwright-java-6963494473526026391\package\lib\server\dispatchers\dispatcher.js:313:22)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+	... 37 more
+</pre></div></td>
+<td>25</td>
+<td>org.collegesuggestproject.HomePage_HeaderSection@32ee6fee</td></tr>
 </table><p>
 </body>
 </html>
