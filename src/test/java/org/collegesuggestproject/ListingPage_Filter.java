@@ -1,6 +1,7 @@
 package org.collegesuggestproject;
 
 import org.pageobjectmodel.BaseClass;
+import org.pageobjectmodel.ListingPageObject;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -12,6 +13,8 @@ import com.microsoft.playwright.Locator;
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
 public class ListingPage_Filter extends BaseClass {
+	
+	ListingPageObject listingPage;
 
 	@BeforeClass
 	public void setup() {
@@ -22,54 +25,50 @@ public class ListingPage_Filter extends BaseClass {
 		page.navigate("https://staging.collegesuggest.com/");
 		page.hover("//*[@id='engineering-colleges-menu-button']");
 		page.click("//*[@id=\"engineering-colleges-menu\"]/li[1]");
+		
+		listingPage = new ListingPageObject(page);
 
 	}
 
 	@Test(priority = 1)
 	public void verifyFilterTextIsPresent() {
 
-		Locator filter = page.locator("//p[contains(text(),'Filter')]");
-		assertThat(filter).hasText("Filter");
+		listingPage.verifyFilterHeading();
 
 	}
 
 	@Test(priority = 2)
 	public void verifyStateTextIsPresent() {
 
-		Locator state = page.locator("//p[normalize-space()='State']");
-		assertThat(state).hasText("State");
+		listingPage.verifyStateHeading();
 
 	}
 
 	@Test(priority = 3)
 	public void verifyCityTextIsPresent() {
 
-		Locator city = page.locator("//p[normalize-space()='City']");
-		assertThat(city).hasText("City");
+		listingPage.verifyCityHeading();
 
 	}
 
 	@Test(priority = 4)
 	public void verifyOwnershipTextIsPresent() {
 
-		Locator ownership = page.locator("//p[normalize-space()='Ownership']");
-		assertThat(ownership).hasText("Ownership");
+		listingPage.verifyOwnershipHeading();
 
 	}
 
 	@Test(priority = 5)
 	public void verifyCategoryTextIsPresent() {
 
-		Locator category = page.locator("//p[normalize-space()='Category']");
-		assertThat(category).hasText("Category");
+		listingPage.verifyCategoryHeading();
 
 	}
 
 	@Test(priority = 6)
 	public void verifyCourseTextIsPresent() {
 
-		Locator course = page.locator("//p[normalize-space()='Course']");
-		assertThat(course).hasText("Course");
+		listingPage.verifyCourseHeading();
 
 	}
 

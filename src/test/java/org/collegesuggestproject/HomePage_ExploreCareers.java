@@ -1,21 +1,20 @@
 package org.collegesuggestproject;
 
 import org.pageobjectmodel.BaseClass;
+import org.pageobjectmodel.HomePageObject;
 import org.testng.annotations.Test;
 
-import com.microsoft.playwright.Locator;
-
-import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
-
 public class HomePage_ExploreCareers extends BaseClass {
+
+	HomePageObject homePage;
 
 	// Verify the presence of the 'Explore Careers' section heading.
 	@Test(priority = 1)
 
 	public void cs_Verify_ExploreCareersSection_Heading_Is_Present_0001() {
+		homePage = new HomePageObject(page);
 
-		Locator ExploreCareersSectionheader = page.locator("//h2[text()='Explore Careers']");
-		assertThat(ExploreCareersSectionheader).hasText("Explore Careers");
+		homePage.verifyExploreCareerHeading();
 
 	}
 
@@ -25,8 +24,7 @@ public class HomePage_ExploreCareers extends BaseClass {
 
 	public void cs_Verify_TopCollegeInIndia_Heading_Is_Present_0002() {
 
-		Locator TopCollegeInIndiaheader = page.locator("//p[text()='Top Colleges in India']");
-		assertThat(TopCollegeInIndiaheader).hasText("Top Colleges in India");
+		homePage.verifyTopCollegeInIndiaheading();
 
 	}
 
@@ -35,9 +33,8 @@ public class HomePage_ExploreCareers extends BaseClass {
 	@Test(priority = 3)
 
 	public void cs_Verify_TopPlacesInIndiaToStudy_Heading_Is_Present_0003() throws InterruptedException {
-		Locator TopPlacesInIndiaToStudyheader = page.locator("//p[text()='Top Places In India to study']");
-		assertThat(TopPlacesInIndiaToStudyheader).hasText("Top Places In India to study");
 
+		homePage.verifyTopPlacesInIndiaToStudyheading();
 	}
 
 	// Verify the presence of the 'Top Courses to study' heading.
@@ -46,45 +43,26 @@ public class HomePage_ExploreCareers extends BaseClass {
 
 	public void cs_Verify_TopCoursesToStudy_Heading_Is_Present_0004() throws InterruptedException {
 
-		Locator TopCoursesToStudyheader = page.locator("//p[text()='Top Courses to study']");
-		assertThat(TopCoursesToStudyheader).hasText("Top Courses to study");
+		homePage.verifyTopCoursesToStudyheading();
 
 	}
 
 	@Test(priority = 5)
 
 	public void click_On_TopCollegesinIndia_0005() {
-		page.click("//a[text()='Top Engineering colleges']");
-
-		Locator TopEngineeringCollegesinIndiaheader = page
-				.locator("//p[text()='Top Engineering Colleges in India']");
-		assertThat(TopEngineeringCollegesinIndiaheader).hasText("Top Engineering Colleges in India");
-
-		page.goBack();
+		homePage.clickOnTopEngineeringCollegesInIndia();
 	}
 
 	@Test(priority = 6)
 
 	public void click_On_TopPlacesInIndiatostudy_0006() {
-		page.click("//a[text()='Coimbatore']");
-
-		Locator TopEngineeringCollegesinCoimbatoreheader = page
-				.locator("//p[text()='Top Engineering Colleges in Coimbatore']");
-		assertThat(TopEngineeringCollegesinCoimbatoreheader).hasText("Top Engineering Colleges in Coimbatore");
-
-		page.goBack();
+		homePage.clickOnTopPlacesInIndiatostudyCoimbatore();
 	}
 
 	@Test(priority = 7)
 
 	public void click_On_TopCoursestostudy_0007() {
-		page.click("//a[text()='ECE']");
-
-		Locator TopEngineeringCollegesinECEheader = page
-				.locator("//p[text()='Top Engineering Colleges in ECE']");
-		assertThat(TopEngineeringCollegesinECEheader).hasText("Top Engineering Colleges in ECE");
-
-		page.goBack();
+		homePage.clickOnTopCoursestostudyEce();
 	}
 
 }

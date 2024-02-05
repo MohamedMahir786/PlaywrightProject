@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.collegesuggestproject.HomePage_HeaderSection">
+      <class name="org.collegesuggestproject.ListingPage_SortBy">
         <methods>
-          <include name="setup"/>
           <include name="teardown"/>
-          <include name="engineering"/>
+          <include name="setup"/>
+          <include name="verifySortByTextIsPresent"/>
         </methods>
-      </class> <!-- org.collegesuggestproject.HomePage_HeaderSection -->
+      </class> <!-- org.collegesuggestproject.ListingPage_SortBy -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

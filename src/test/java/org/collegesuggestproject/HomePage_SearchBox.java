@@ -1,29 +1,37 @@
 package org.collegesuggestproject;
 
-import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
-
-import java.nio.file.Paths;
-
 import org.pageobjectmodel.BaseClass;
+import org.pageobjectmodel.HomePageObject;
 import org.testng.annotations.Test;
 
-import com.microsoft.playwright.Locator;
-import com.microsoft.playwright.Page.ScreenshotOptions;
-
 public class HomePage_SearchBox extends BaseClass {
+	HomePageObject homePage;
+
+	@Test(priority = 0)
+
+	public void verifyTheMainHeadingOfSearchBox() {
+		homePage = new HomePageObject(page);
+		homePage.verifyTheMainHeadingOfSearchBox();
+	}
 
 	@Test(priority = 1)
 
-	public void typeOnSearchBox() {
+	public void enterCollegeNameAndTakeScreenShot() {
 
-		ScreenshotOptions screenshotOptions = new ScreenshotOptions();
-		Locator input = page.locator("[placeholder='Search']");
-		input.fill("Mahi");
-		page.screenshot(new ScreenshotOptions().setPath(Paths.get("./snaps/full_page.png")));
+		homePage.enterCollegeNameAndTakeScreenShot();
 
-		page.click("//a[text()='Mahindra University']");
-		assertThat(page).hasTitle(
-				"MU Hyderabad 2022 B.Tech Overview For Courses, Placements & More | College Suggest | College Suggest");
 	}
 
+	@Test(priority = 3)
+
+	public void clickOnMahindraUniversity() {
+
+		homePage.clickOnMahindraUniversity();
+	}
+
+	@Test(priority = 2)
+
+	public void verifyBannerSectionOfSearchBox() {
+		homePage.verifyBannerSectionOfSearchBox();
+	}
 }
